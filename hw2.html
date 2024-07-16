@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [2,3,5,7,11,13,17,19,23,29,31];
+        let  small = a[0]; let big = a[0];
+        for (key in a){
+            if(a[key]>big) big = a[key];
+            if(a[key]<small) small = a[key];
+        }
+        console.log(big);
+        console.log(small);
+    </script>
+</body>
+</html>
